@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dellse.healthmeter.MainActivity"
+    android:background="#fffefe">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" // Check"
+        android:id="@+id/textView"
+        android:layout_marginTop="42dp"
+        android:textColor="#fb0606"
+        android:textStyle="bold|italic"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Health"
+        android:id="@+id/textView2"
+        android:textColor="#30f916"
+        android:textStyle="bold|italic"
+        android:textSize="50sp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="#cacd17" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Yes"
+            android:id="@+id/yes"
+            android:background="#288d8d"
+            android:onClick="yes" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:text="Sometimes"
+            android:id="@+id/sometimes"
+            android:background="#e57a38"
+            android:layout_marginLeft="10dp"
+            android:onClick="sometimes" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:text="No"
+            android:id="@+id/no"
+            android:layout_marginLeft="10dp"
+            android:background="#f80808"
+            android:onClick="no" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="QUES"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/text"
+        android:layout_alignLeft="@+id/text"
+        android:layout_alignStart="@+id/text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/num"
+        android:layout_above="@+id/text"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:onClick="exit"
+        android:background="#3bf81e"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/text"
+        android:layout_alignEnd="@+id/text"
+        android:id="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Test"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_marginRight="80dp"
+        android:background="#3bf81e"
+        android:onClick="start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fitness"
+        android:id="@+id/button3"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignRight="@+id/text"
+        android:layout_alignEnd="@+id/text"
+        android:background="#030303"
+        android:onClick="result"
+        android:textColor="#ffffff" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

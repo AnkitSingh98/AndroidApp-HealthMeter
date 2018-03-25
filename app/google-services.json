@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "457613233521",
+    "firebase_url": "https://health-meter-5d882.firebaseio.com",
+    "project_id": "health-meter-5d882",
+    "storage_bucket": "health-meter-5d882.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457613233521:android:d3e7652a40afe2df",
+        "android_client_info": {
+          "package_name": "com.example.dellse.healthmeter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457613233521-uiaersicco5jl2fa0hrvtneec51he8c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAWpOOKCP0QA7sB5K0kDfIn-zjo_6_V4I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
